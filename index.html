@@ -2,15 +2,14 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Concesionario</title>
+    <title>Jeep Argentina</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"> 
 </head>
-
 <body>
     <header>
-        <h1 id="logo">JEEP SITIO WEB</h1>
+        <h1 id="logo">JEEP ARGENTINA SITIO WEB</h1>
         <nav>
             <ul>
                 <li><a href="/index.html">inicio</a></li>
@@ -34,14 +33,12 @@
                     <h3>RENEGADE WILLYS</h3>
                     <p>El legado se transforma con una nueva generación de Jeep® Renegade. Especialmente diseñado para vivir nuevas aventuras sin perder comodidad y con la seguridad característica de Jeep®.</p>
             </article>
-
             <article>
                     <img src="./imagenes/jeep-commander.png" alt="Jeep Commander">
                     <p class="subtitulo"><span>NUEVO</span> | 2026 </p>
                     <h3>JEEP COMMANDER</h3>
                     <p> Naturalmente sofisticado, el Jeep® Commander te invita a descubrir aventuras, con mayor espacio interior y un nivel de sofisticación proyectado para proporcionar la máxima comodidad y versatilidad.</p>
             </article>
-
             <article>
                     <img src="./imagenes/jeepwrangler.jpg" alt="Jeep Wrangler">
                     <p class="subtitulo"><span>NUEVO</span> | 2026 </p>
@@ -50,13 +47,48 @@
             </article>
         </div>
     </section>
+    
+    <section class="reseñas">
+        <h2>Reseñas de clientes</h2>
+        <section class="card">
+            <i class="fa-solid fa-user"></i>
+            <h3>- Martín G.</h3>
+            <p>"Excelente atención. Me asesoraron durante todo el proceso y pude retirar mi Jeep sin inconvenientes."</p>
+        </section>
 
-    <form action=""></form>
+        <section class="card">
+            <i class="fa-solid fa-user"></i>
+            <h3>- Carolina R.</h3>
+            <p>"Muy buena experiencia. El equipo fue claro con la financiación y respondió todas mis dudas."</p>
+        </section>
+
+        <section class="card">
+            <i class="fa-solid fa-user"></i>
+            <h3>- Federico M.</h3>
+            <p>"Compré mi Jeep Renegade y quedé muy conforme con la atención y el servicio postventa."</p>
+        </section>
+    </section>
+
+     <fieldset class="fieldset">
+        <legend>Consultas</legend>
+        <form class="formulario" action="https://formspree.io/f/xbgddlkp" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" minlength="3" maxlength="40" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Ingrese su email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Ingrese su mensaje" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </fieldset>
 
      <footer>
         <div>
             <p></p>
-            <p>Alumna: Luciana Gabriela Ciro</p>
+            <p>Alumna: Luciana Ciro</p>
             <p>Curso: Front End JS</p>
             <p>Comisión: C26239</p>
             <p>Instructor: Nicolás Fernández</p>
