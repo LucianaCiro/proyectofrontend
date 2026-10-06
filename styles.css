@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+}
+
+/* HEADER Y NAV BAR */
+header{
+    background-color: #000000;
+    height: 80px;
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo{
+    width: 80px;
+    height: 80px;
+    background-image: url(imagenes/logo.png);
+    background-size: cover;
+    font-size: 0;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+nav a:hover{
+    background-color: #e2e0e0;
+    color: #80010b;
+}
+
+/* HERO SECTION */
+#banner{
+    display: flex;
+    height: 600px;
+    background-image: url(imagenes/banner.jpg);
+    background-size: cover;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#banner h2{
+    font-size: 4rem;
+    font-weight: 900;
+    color:rgb(39, 39, 39);
+    margin-top: 50px;
+}
+
+/* SECCION DE PASTILLAS DE PRODUCTOS */
+#productos{
+    width: 90%;
+    margin: 0 auto;
+    padding: 40px 40px;
+}
+
+#productos h2{
+    font-size: 32px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #181d19;
+}
+
+.pastillas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+}
+
+.pastillas article{
+    width: 40%;
+    text-align: center;
+}
+
+
+.pastillas img{
+    width: 300px;
+    height: auto;
+}
+
+.subtitulo span{
+    text-transform: uppercase;
+    color:  #c5101f;
+    font-weight: 900;
+}
+
+.pastillas p{
+    margin-right: 15px;
+    margin-top: 15px;
+    text-align: justify;
+}
+
+.pastillas h3{
+    font-size: 24px;
+    letter-spacing: 0.5px;
+}
+
+.pastillas p{
+    font-weight: 400;
+    font-size: 18px;
+    color: #373737;
+}
+
+/* FOOTER CON ICONOS */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 200px;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  letter-spacing: 1.2px;
+  font-weight: bold;
+}
+
+#redes-sociales a {
+  color: white;
+  margin-right: 15px;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+#redes-sociales i {
+  font-size: 40px;
+  margin-right: 20px;
+  margin-top: 35px;
+}
+
+#redes-sociales i:hover {
+    color: #5f7bfa;
+    background-color: #050505;
+    border-radius: 10px;;
+    padding: 8px;
+    transform: scale(1);
+    opacity: 0.7;
+}
+
+
